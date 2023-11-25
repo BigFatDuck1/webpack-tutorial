@@ -94,7 +94,8 @@
     "wildcard": "^2.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "author": "BigFatDuck1",
   "license": "ISC"
