@@ -1,6 +1,7 @@
 import _ from "lodash";
 import myName from "./myName.js";
 import "./style.css";
+import Photo from "./photo.png";
 
 function component() {
     const element = document.createElement("div");
@@ -12,6 +13,12 @@ function component() {
     element.textContent = myName("BigFatDuck1");
 
     element.classList.add("hello");
+
+    //Add image
+    const myPhoto = new Image();
+    myPhoto.src = Photo;
+
+    element.appendChild(myPhoto);
 
     return element;
 }
