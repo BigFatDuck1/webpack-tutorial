@@ -2,6 +2,9 @@ import _ from "lodash";
 import myName from "./myName.js";
 import "./style.css";
 import Photo from "./photo.png";
+//Data
+import Data from "./data.xml";
+import Comma from "./data.csv";
 
 function component() {
     const element = document.createElement("div");
@@ -19,6 +22,10 @@ function component() {
     myPhoto.src = Photo;
 
     element.appendChild(myPhoto);
+
+    //Data
+    console.log(Data);
+    console.log(Comma);
 
     return element;
 }
